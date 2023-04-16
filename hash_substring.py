@@ -1,5 +1,5 @@
+# Nikita Smirnovs 221RDB433
 # python3
-
 def read_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
@@ -46,9 +46,8 @@ def get_occurrences(pattern, text):
 
     paHash = getHash(pattern,pa)
     teHash = getHash(text,te)
-    
-    for i in range(te - pa + 1):
 
+    for i in range(te - pa + 1):
         if paHash == teHash:
             continue
 
